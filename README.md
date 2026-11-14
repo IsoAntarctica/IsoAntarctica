@@ -1,2 +1,2 @@
-<p align="center"><img src="assets/crescent-ribbon.gif" alt="" width="880"></p>
+<p align="center"><img src="assets/crescent-meander.gif" alt="" width="880"></p>
 <p align="center"><em>nothing's new here</em></p>
