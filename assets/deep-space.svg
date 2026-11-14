@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 390">
+  <defs>
+    <radialGradient id="sky" cx=".68" cy=".67" r=".78">
+      <stop stop-color="#465e6c"/><stop offset=".49" stop-color="#292b49"/><stop offset="1" stop-color="#10101e"/>
+    </radialGradient>
+    <radialGradient id="violet">
+      <stop stop-color="#a38ab8" stop-opacity=".75"/><stop offset="1" stop-color="#8675ad" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="jade">
+      <stop stop-color="#82b1a6" stop-opacity=".72"/><stop offset="1" stop-color="#709ea7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="planet" cx=".72" cy=".21" r=".89">
+      <stop stop-color="#e3d5e5"/><stop offset=".24" stop-color="#a89cbb"/><stop offset=".55" stop-color="#57627e"/><stop offset=".82" stop-color="#242941"/><stop offset="1" stop-color="#151729"/>
+    </radialGradient>
+    <linearGradient id="water" x2="0" y2="1">
+      <stop stop-color="#293647"/><stop offset="1" stop-color="#111624"/>
+    </linearGradient>
+    <linearGradient id="ring">
+      <stop stop-color="#8fb4af"/><stop offset=".48" stop-color="#c5b4d4"/><stop offset="1" stop-color="#a1b9d5"/>
+    </linearGradient>
+    <filter id="dust" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".022 .05" numOctaves="4" seed="19"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <filter id="blur"><feGaussianBlur stdDeviation="12"/></filter>
+    <clipPath id="frame"><rect width="880" height="390" rx="14"/></clipPath>
+    <clipPath id="disk"><circle cx="574" cy="141" r="82"/></clipPath>
+    <clipPath id="lake"><path d="M0 301h880v89H0z"/></clipPath>
+    <pattern id="stars" width="199" height="139" patternUnits="userSpaceOnUse">
+      <g fill="#e9e0ef">
+        <circle cx="14" cy="24" r=".65" opacity=".6"/><circle cx="111" cy="32" r=".55" opacity=".47"/>
+        <circle cx="66" cy="73" r=".8" opacity=".63"/><circle cx="157" cy="112" r=".48" opacity=".66"/>
+        <circle cx="32" cy="117" r=".5" opacity=".32"/><circle cx="181" cy="63" r=".85" opacity=".56"/>
+      </g>
+    </pattern>
+    <style>
+      .star { animation: shimmer 7s ease-in-out infinite alternate; }
+      .star:nth-child(2n) { animation-delay: -4.5s; }
+      .star:nth-child(3n) { animation-duration: 9s; animation-delay: -2s; }
+      .ripple { animation: drift 11s ease-in-out infinite alternate; }
+      .ripple + .ripple { animation-delay: -6s; animation-duration: 15s; }
+      @keyframes shimmer { from { opacity: .32; } to { opacity: .95; } }
+      @keyframes drift { from { transform: translateX(-9px); opacity: .28; } to { transform: translateX(11px); opacity: .61; } }
+      @media (prefers-reduced-motion: reduce) { .star, .ripple { animation: none; } }
+    </style>
+  </defs>
+  <g clip-path="url(#frame)">
+    <path fill="url(#sky)" d="M0 0h880v390H0z"/>
+    <ellipse cx="288" cy="164" rx="327" ry="98" transform="rotate(-23 288 164)" fill="url(#violet)"/>
+    <ellipse cx="683" cy="225" rx="340" ry="77" transform="rotate(-17 683 225)" fill="url(#jade)"/>
+    <path d="M0 0h880v302H0z" filter="url(#dust)" opacity=".18" style="mix-blend-mode:soft-light"/>
+    <path d="M0 0h880v295H0z" fill="url(#stars)"/>
+    <g fill="#e4e3f3" opacity=".82">
+      <circle class="star" cx="101" cy="119" r="1.6"/><circle class="star" cx="244" cy="57" r="1.3"/>
+      <circle class="star" cx="314" cy="176" r="1.7"/><circle class="star" cx="383" cy="99" r="1.1"/>
+      <circle class="star" cx="734" cy="81" r="1.5"/><circle class="star" cx="804" cy="147" r="1.8"/>
+      <circle class="star" cx="455" cy="28" r="1.15"/><circle class="star" cx="183" cy="211" r="1.25"/>
+      <path class="star" d="M210 114v10m-5-5h10m558 65v8m-4-4h8" fill="none" stroke="#d6d9ed" stroke-width=".7"/>
+    </g>
+    <ellipse cx="574" cy="141" rx="172" ry="30" transform="rotate(-19 574 141)" fill="none" stroke="url(#ring)" opacity=".48"/>
+    <circle cx="574" cy="141" r="83" fill="#9ab5ce" opacity=".3" filter="url(#blur)"/>
+    <circle cx="574" cy="141" r="82" fill="url(#planet)" stroke="#bac1d4" stroke-opacity=".28"/>
+    <g clip-path="url(#disk)" fill="none">
+      <path d="M474 136Q558 159 666 79m-188 69Q565 174 670 91m-194 75Q568 193 673 110m-181 78Q578 209 672 138" stroke="#d9c8de" stroke-width="5" opacity=".13"/>
+      <path d="M490 170Q580 179 676 110m-182 74Q584 196 676 127" stroke="#39415e" stroke-width="3" opacity=".35"/>
+      <path d="M490 58h168v166H490z" filter="url(#dust)" opacity=".19" style="mix-blend-mode:soft-light"/>
+    </g>
+    <g transform="rotate(-19 574 141)" fill="none" stroke="url(#ring)">
+      <path d="M402 141a172 30 0 0 0 344 0" stroke-width="2.2" opacity=".76"/>
+      <path d="M392 141a182 34 0 0 0 364 0M383 141a191 39 0 0 0 382 0" opacity=".42"/>
+    </g>
+    <path d="M0 286L52 278l49-16 36 8 54-24 38 18 36-7 51 22 60 12 64-3 56 5 75-9 48-16 29 7 41-22 29 10 54-22 52 19 56 5v40H0z" fill="#222b40"/>
+    <path d="M0 297l68-8 83 3 67 6 74-5 69 6h123l88-4 62 4 100-12 66 3 80-7v31H0z" fill="#171f30"/>
+    <path d="M0 301h880v89H0z" fill="url(#water)"/>
+    <g clip-path="url(#lake)">
+      <ellipse cx="566" cy="316" rx="253" ry="41" fill="url(#jade)" opacity=".55"/>
+      <ellipse cx="420" cy="334" rx="238" ry="29" fill="url(#violet)" opacity=".34"/>
+      <g fill="none" stroke="url(#ring)" stroke-linecap="round">
+        <path class="ripple" opacity=".43" d="M374 312h93m28 0h110m32-2h47m-216 11h157m15 4h74m-203 5h91m-229 5h100m59 12h134m-260 9h93"/>
+        <path class="ripple" opacity=".34" d="M562 308h96m-306 9h65m200 3h61m-224 6h83m28 10h85m-161 6h65m-223 21h79m217-9h67m-273 21h174"/>
+      </g>
+    </g>
+    <path d="M0 344q62-4 120 19l78 27H0zm880-15q-72 13-112 34l-56 27h168z" fill="#101522"/>
+  </g>
+</svg>
