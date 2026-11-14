@@ -1,3 +1,1 @@
-<p align="center">
-  <img src="assets/deep-space.svg" alt="" width="880">
-</p>
+<p align="center"><img src="assets/orbital-chart.svg" alt="" width="960"></p>
