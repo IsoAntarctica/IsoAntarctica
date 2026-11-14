@@ -1,1 +1,1 @@
-<p align="center"><img src="assets/moon-mist.gif" alt="" width="880"></p>
+<p align="center"><img src="assets/crescent-mist.gif" alt="" width="880"></p>
