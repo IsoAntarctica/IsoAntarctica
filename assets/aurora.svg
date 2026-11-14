@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 392">
   <defs>
     <linearGradient id="aurora" x2="1" y2=".65">
-      <stop stop-color="#a58adb"/><stop offset=".46" stop-color="#71bed2"/><stop offset="1" stop-color="#8cd0a3"/>
+      <stop stop-color="#bf94e6"/><stop offset=".67" stop-color="#86d1e3"/><stop offset="1" stop-color="#a5dbac"/>
     </linearGradient>
     <clipPath id="frame"><rect width="960" height="392" rx="10"/></clipPath>
     <style>
@@ -14,8 +14,8 @@
     </style>
   </defs>
   <g clip-path="url(#frame)">
-    <path fill="#16192b" d="M0 0h960v392H0z"/>
-    <g fill="#b7aedb"><circle cx='202' cy='139' r='.8' opacity='.6'/>
+    <path fill="#151126" d="M0 0h960v392H0z"/>
+    <g fill="#baacd9"><circle cx='202' cy='139' r='.8' opacity='.6'/>
 <circle cx='587' cy='63' r='.4' opacity='.2'/>
 <circle cx='298' cy='61' r='.8' opacity='.2'/>
 <circle cx='204' cy='244' r='.4' opacity='.7'/>
@@ -145,7 +145,7 @@
 <circle cx='773' cy='53' r='.7' opacity='.3'/>
 <circle cx='355' cy='202' r='.5' opacity='.2'/>
 <circle cx='74' cy='46' r='.7' opacity='.3'/></g>
-    <g fill="none" stroke="#a6a4c8" stroke-opacity=".34">
+    <g fill="none" stroke="#a49ac3" stroke-opacity=".34">
       <path d="M57 110l54 27 44-31 61 43 46-75m478 92 38-46 43 13 35-37"/>
       <path d="M24 52V24h28m856 0h28v28m0 288v28h-28m-856 0H24v-28"/>
     </g>
@@ -158,14 +158,14 @@
       <path class="stars" d="M327 81v18m-9-9h18m431-42v14m-7-7h14M199 45v10m-5-5h10"/>
       <path class="stars late" d="M84 189v12m-6-6h12m626-75v12m-6-6h12m176 49v18m-9-9h18"/>
     </g>
-    <circle cx="589" cy="110" r="54" fill="#b29ade"/>
-    <circle cx="609" cy="94" r="54" fill="#16192b"/>
-    <circle cx="589" cy="110" r="63" fill="none" stroke="#b29ade" stroke-opacity=".43" stroke-dasharray="1 5"/>
-    <circle cx="654" cy="130" r="4.4" fill="#91cebe"/>
-    <path d="M0 243C140 278 254 108 423 188S671 299 960 126V392H0z" fill="#343353"/>
-    <path d="M0 272C171 305 252 150 422 216S710 298 960 163V392H0z" fill="#29485b"/>
-    <path d="M0 292C176 326 270 214 426 253S731 307 960 208V392H0z" fill="#284e51"/>
-    <path d="M0 310C180 346 269 248 428 279S736 326 960 249V392H0z" fill="#202e40"/>
+    <circle cx="589" cy="110" r="54" fill="#cfadef"/>
+    <circle cx="609" cy="94" r="54" fill="#151126"/>
+    <circle cx="589" cy="110" r="63" fill="none" stroke="#cfadef" stroke-opacity=".43" stroke-dasharray="1 5"/>
+    <circle cx="654" cy="130" r="4.4" fill="#a5dbac"/>
+    <path d="M0 243C140 278 254 108 423 188S671 299 960 126V392H0z" fill="#46305d"/>
+    <path d="M0 272C171 305 252 150 422 216S710 298 960 163V392H0z" fill="#353a60"/>
+    <path d="M0 292C176 326 270 214 426 253S731 307 960 208V392H0z" fill="#294454"/>
+    <path d="M0 310C180 346 269 248 428 279S736 326 960 249V392H0z" fill="#211d36"/>
     <g fill="none" stroke="url(#aurora)">
       <path d="M0 243C140 278 254 108 423 188S671 299 960 126" stroke-width="2.6"/>
       <path d="M0 253C150 288 250 127 423 199S674 307 960 140" opacity=".48"/>
