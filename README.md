@@ -1,1 +1,1 @@
-<p align="center"><img src="assets/orbital-chart.svg" alt="" width="960"></p>
+<p align="center"><img src="assets/constellation.svg" alt="" width="960"></p>
